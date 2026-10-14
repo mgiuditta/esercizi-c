@@ -79,16 +79,15 @@ for dir in "$ROOT"/[0-9][0-9]-*/; do
     fi
 
     bin="$TMP/$dname-$base"
+    # array (non stringhe) così i percorsi con spazi, es. "Programmazione e Algoritmi I", funzionano
     if [ -d "$ex" ]; then
-      srcs="$ex/*.c"
-      inc="-I$ex"
+      srcs=( "$ex"/*.c "-I$ex" )
     else
-      srcs="$ex"
-      inc=""
+      srcs=( "$ex" )
     fi
 
     # shellcheck disable=SC2086
-    if ! $CC $CFLAGS $SANFLAGS $inc $srcs -o "$bin" -lm 2> "$TMP/cc.log"; then
+    if ! $CC $CFLAGS $SANFLAGS "${srcs[@]}" -o "$bin" -lm 2> "$TMP/cc.log"; then
       echo "  ${RED}COMPILE ERROR${RST} $base"
       sed 's/^/      /' "$TMP/cc.log" | head -25
       cerr=$((cerr+1))
