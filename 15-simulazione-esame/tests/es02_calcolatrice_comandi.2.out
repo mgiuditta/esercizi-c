@@ -1,0 +1,11 @@
+div 7 0 -> errore: divisione per zero
+mod 7 0 -> errore: divisione per zero
+pot 2 -1 -> errore: esponente negativo
+radice: comando sconosciuto
+pot 5 0 = 1
+pot 0 0 = 1
+mcd -12 18 = 6
+mcd 0 0 = 0
+div -7 2 = -3
+stat: 5 riuscite, 4 fallite
+finale stat: 5 riuscite, 4 fallite

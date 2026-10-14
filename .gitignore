@@ -1,0 +1,8 @@
+# eseguibili e file di compilazione
+*.o
+*.out.tmp
+a.out
+*.dSYM/
+.DS_Store
+# file creati dagli esercizi sui file
+*/tests/fixtures/*.tmp

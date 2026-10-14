@@ -1,0 +1,3 @@
+parole: [malloc] [calloc] [realloc] [free]
+risultato: [malloc/calloc/realloc/free]
+byte allocati per il risultato: 27

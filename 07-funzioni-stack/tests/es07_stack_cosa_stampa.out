@@ -1,0 +1,8 @@
+main: x=1 y=3
+f prima: x=5 y=3
+g: x=6 y=50
+f dopo: x=5 y=56
+main: x=1 y=3 r=61
+blocco: x=100
+g: x=2 y=10
+fine: x=1 r=12

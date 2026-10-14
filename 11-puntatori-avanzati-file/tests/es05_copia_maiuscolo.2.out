@@ -1,0 +1,4 @@
+copiati 35 caratteri
+--- contenuto di formula_maiuscola.txt ---
+X = 3 + Y;
+IF (X > 2) PRINTF("OK");--- fine ---

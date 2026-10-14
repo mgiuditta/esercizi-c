@@ -1,0 +1,10 @@
+A: n=10
+azzera: n=1
+stampa_n: n=10
+incrementa: n=15
+B: n=10
+C: n=3
+stampa_n: n=10
+D: n=0
+D: n=1
+stampa_n: n=20

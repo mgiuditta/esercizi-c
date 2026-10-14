@@ -1,0 +1,6 @@
+somma = 70
+massimo = 20
+cerco 7: [0,7] -> trovato in posizione 3
+cerco 8: [0,7] [4,7] [4,4] -> non presente
+cerco 1: [0,7] [0,2] [0,0] -> trovato in posizione 0
+cerco 20: [0,7] [4,7] [6,7] [7,7] -> trovato in posizione 7

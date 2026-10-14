@@ -1,0 +1,6 @@
+porta: 42 (intero)
+temp: 21.50 (reale)
+luce: acceso (testo)
+umid: -0.25 (reale)
+totale numerico: 63.25
+byte di una Misura: 32

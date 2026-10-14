@@ -1,0 +1,13 @@
+A) *pc = b
+B) pc - v = 1
+C) sizeof *pc = 1, sizeof pc = 8
+D) *pi = 16843009, sizeof *pi = 4
+E) byte tra pi e pi + 1 = 4
+F) pi2 == NULL vale 1
+G) byte tra &i e pc2 = 1
+H) *pc2 = 1
+I) byte tra &i e (char *)(&i + 1) = 4
+L) byte tra &pc2 e &pc2 + 1 = 8
+M) v = aXcd
+N) *(v + 2) == v[2] vale 1
+O) &v[3] - &v[0] = 3

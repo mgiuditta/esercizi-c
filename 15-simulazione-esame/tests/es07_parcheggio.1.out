@@ -1,0 +1,13 @@
+entrata AB123CD (auto): posto 0
+entrata MOTO1 (moto): posto 1
+entrata FUR99 (furgone): posto 2
+posto 0: auto AB123CD dalle 08:30
+posto 1: moto MOTO1 dalle 09:00
+posto 2: furgone FUR99 dalle 07:10
+uscita AB123CD: posto 0, 121 min, 6.00 euro
+uscita MOTO1: posto 1, 20 min, 1.00 euro
+uscita FUR99: posto 2, 350 min, 15.75 euro
+posto 0: libero
+posto 1: libero
+posto 2: libero
+incasso: 22.75 euro, veicoli usciti: 3

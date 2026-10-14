@@ -1,0 +1,22 @@
+A: 8
+B: 9
+C: m=4 i=4
+D: m=5 i=6
+E: 11 20
+F: 30 2
+G: 99 40 99
+H: e a me
+I: Esame 6
+J: 3
+giu(5) profondita=1
+giu(3) profondita=2
+giu(1) profondita=3
+giu(-1) profondita=4
+su(-1) r=9
+su(1) r=10
+su(3) r=11
+su(5) r=12
+K: m=12 acc=9
+giu(0) profondita=1
+su(0) r=9
+L: m=9

@@ -1,0 +1,12 @@
+Comandi: 1=aggiungi 2=preleva 3=stampa 4=valore 0=esci
+magazzino vuoto
+aggiunto 101 viti
+aggiunto 102 bulloni
+aggiornato 101: quantita 200
+prelevati 30 di 101: restano 170
+quantita insufficiente per 102 (disponibili 40)
+articolo 999 inesistente
+  101 viti       q=170 prezzo=0.10
+  102 bulloni    q=40 prezzo=0.25
+valore totale: 27.00
+ciao!

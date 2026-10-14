@@ -1,0 +1,4 @@
+2[ab]3[x]c -> "ababxxxc" (lunghezza 8)
+2[a3[b]] -> "abbbabbb" (lunghezza 8)
+abc -> "abc" (lunghezza 3)
+10[z] -> "zzzzzzzzzz" (lunghezza 10)

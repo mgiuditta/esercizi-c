@@ -1,0 +1,3 @@
+8[8[x]] -> "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" (lunghezza 64)
+9[9[x]] -> troppo lunga
+2[2[2[2[2[2[ab]]]]]] -> troppo lunga

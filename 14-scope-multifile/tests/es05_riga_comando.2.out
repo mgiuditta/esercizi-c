@@ -1,0 +1,12 @@
+> conta dispari
+Uso: conta <criterio> <numeri...>
+codice di uscita: 1
+> conta boh 1 2
+Criterio sconosciuto: boh
+codice di uscita: 2
+> conta 
+Uso: conta <criterio> <numeri...>
+codice di uscita: 1
+> conta dispari 9
+dispari: 1 su 1
+codice di uscita: 0

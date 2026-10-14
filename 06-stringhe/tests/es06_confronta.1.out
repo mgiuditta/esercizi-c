@@ -1,0 +1,5 @@
+ciao ciao -> mia: 0, strcmp: 0, ==: 0
+abc abd -> mia: -1, strcmp: -1, ==: 0
+casa cas -> mia: 1, strcmp: 1, ==: 0
+Zebra ape -> mia: -1, strcmp: -1, ==: 0
+b a -> mia: 1, strcmp: 1, ==: 0

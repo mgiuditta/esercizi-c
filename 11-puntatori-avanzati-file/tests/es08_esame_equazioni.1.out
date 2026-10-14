@@ -1,0 +1,6 @@
+1) a=1.00 b=-3.00 c=2.00: x1=2.00 x2=1.00
+2) a=1.00 b=2.00 c=1.00: radici coincidenti x=-1.00
+3) a=1.00 b=0.00 c=1.00: nessuna radice reale
+4) a=0.00 b=2.00 c=1.00: non e' di secondo grado
+5) a=2.00 b=-6.00 c=0.00: x1=3.00 x2=0.00
+equazioni: 5, con radici reali: 3

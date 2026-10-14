@@ -1,0 +1,9 @@
+somma 3 4 = 7
+diff 3 10 = -7
+prod -6 7 = -42
+div 17 5 = 3
+mod 17 5 = 2
+pot 2 10 = 1024
+mcd 84 36 = 12
+stat: 7 riuscite, 0 fallite
+finale stat: 7 riuscite, 0 fallite

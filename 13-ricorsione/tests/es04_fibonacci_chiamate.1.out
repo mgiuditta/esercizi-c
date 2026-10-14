@@ -1,0 +1,5 @@
+F(0) = 0 | chiamate ricorsive: 1 | iterativo: 0
+F(1) = 1 | chiamate ricorsive: 1 | iterativo: 1
+F(2) = 1 | chiamate ricorsive: 3 | iterativo: 1
+F(5) = 5 | chiamate ricorsive: 15 | iterativo: 5
+F(10) = 55 | chiamate ricorsive: 177 | iterativo: 55

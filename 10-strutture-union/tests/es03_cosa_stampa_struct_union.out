@@ -1,0 +1,12 @@
+1) sizeof(Esame) = 8
+2) sizeof(union Valore) = 8
+3) sizeof(struct Sbilanciata) = 8
+4) a = PA1 30, b = MAT 18
+5) p1 = 1 Teo, p2 = 2 Teo
+   (dentro boccia: 0)
+6) dopo boccia: 30
+7) dopo boccia_davvero: 0
+8) u.c[0] = 1, u.c[3] = 1
+9) u.i = 0
+10) stesso indirizzo? 1 1
+11) byte tra &a e &a.voto = 4

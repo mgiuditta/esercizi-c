@@ -1,0 +1,7 @@
+2[ab -> errore di formato
+ab] -> errore di formato
+3a -> errore di formato
+[ab] -> errore di formato
+2[] -> "" (lunghezza 0)
+0[abc]d -> "d" (lunghezza 1)
+x-y -> errore di formato

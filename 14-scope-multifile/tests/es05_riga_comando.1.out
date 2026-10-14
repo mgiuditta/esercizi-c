@@ -1,0 +1,9 @@
+> conta pari 4 7 10 -2 3
+pari: 3 su 5
+codice di uscita: 0
+> conta primi 2 3 4 5 9 11
+primi: 4 su 6
+codice di uscita: 0
+> conta positivi -1 -2 0
+positivi: 0 su 3
+codice di uscita: 0

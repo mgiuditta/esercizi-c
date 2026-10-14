@@ -1,0 +1,10 @@
+div 7 0
+mod 7 0
+pot 2 -1
+radice 16 2
+pot 5 0
+pot 0 0
+mcd -12 18
+mcd 0 0
+div -7 2
+stat

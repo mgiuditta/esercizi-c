@@ -1,0 +1,6 @@
+([]{}) -> bilanciata
+a*(b+c) -> bilanciata
+(] -> errore in posizione 1
+(( -> 2 parentesi non chiuse
+) -> errore in posizione 0
+{[()()]} -> bilanciata

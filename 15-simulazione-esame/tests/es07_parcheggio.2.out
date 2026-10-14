@@ -1,0 +1,15 @@
+entrata AA111 (auto): posto 0
+entrata BB222 (auto): posto 1
+entrata CC333 (moto): posto 2
+pieno: DD444 non entra
+targa gia' presente: AA111
+tipo non valido: X
+targa non trovata: ZZ999
+orario non valido per BB222
+uscita BB222: posto 1, 0 min, 2.00 euro
+entrata DD444 (furgone): posto 1
+comando non valido: 5
+posto 0: auto AA111 dalle 08:00
+posto 1: furgone DD444 dalle 08:40
+posto 2: moto CC333 dalle 08:10
+incasso: 2.00 euro, veicoli usciti: 1

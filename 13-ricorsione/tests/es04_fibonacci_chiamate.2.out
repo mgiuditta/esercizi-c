@@ -1,0 +1,3 @@
+F(20) = 6765 | chiamate ricorsive: 21891 | iterativo: 6765
+F(25) = 75025 | chiamate ricorsive: 242785 | iterativo: 75025
+n fuori intervallo (0..30)

@@ -1,0 +1,13 @@
+f: a=1 s=1
+f: a=1 s=2
+f: a=1 s=3
+main: x=1
+blocco: x=2
+main: x=1
+stampa_x: x=100
+scendi(2): livello=1
+scendi(1): livello=2
+scendi(0): livello=3
+scendi(1): livello=4
+scendi(0): livello=5
+chiamate_g=3

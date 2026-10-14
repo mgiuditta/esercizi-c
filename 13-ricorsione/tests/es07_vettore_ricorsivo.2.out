@@ -1,0 +1,4 @@
+somma = -5
+massimo = -5
+cerco -5: [0,0] -> trovato in posizione 0
+cerco 3: [0,0] -> non presente
