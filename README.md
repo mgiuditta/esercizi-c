@@ -1,3 +1,6 @@
+> **Spostata.** Dal 28 ottobre 2026 questi esercizi vivono in `esercizi/c/` della repo unica
+> [`mgiuditta/universita`](https://github.com/mgiuditta/universita). Questa repo non viene più aggiornata.
+
 # Esercizi C — Programmazione e Algoritmi I (UniMi SecAI)
 
 Questa repo raccoglie la **parte in linguaggio C** del corso del prof. Marco Anisetti, cioè i blocchi 2, 3 e 4.
