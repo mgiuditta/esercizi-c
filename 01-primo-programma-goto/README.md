@@ -324,6 +324,64 @@ Tre etichette: <code>prova</code> (riga 3), <code>si</code> (riga 7), <code>no</
 Simulazione `e_primo(9)`: 9 ≥ 2; d = 2: 4 > 9? no; 9 % 2 = 1 → d = 3: 9 > 9? no; 9 % 3 = 0 → `goto no` → 0. `e_primo(7)`: d = 2: 7 % 2 = 1 → d = 3: 9 > 7 → `goto si` → 1. Codice: `soluzioni/es08_primi_goto.c`.
 </details>
 
+### es09 — Triangoli numerici validati, versione strutturata  ·  Tipo esame
+**Fonte:** Consegna al tutor "Triangoli numerici validati" (Moodle, Unità 1; testo in `anno-1/programmazione-1/moodle/12-Triangoli-numerici-validati.md`). Cicli pre/post-condizionati: lezioni 1.5 e 1.6.
+**Testo:** leggi `righe` e `max` (rileggi ciascuno finché non è > 0). Stampa i triangoli crescenti, dove la riga *i* contiene i numeri da 1 a *i*, ma **al massimo `max` numeri in tutto**. Se l'input finisce prima di avere due valori validi, stampa `Input non valido`. Solo `while`, `do while` e `if`, senza `goto` e senza `break`.
+```text
+input:  4 8          output:  1
+                              1 2
+                              1 2 3
+                              1 2
+```
+Requisiti: ciclo esterno sulle righe, ciclo interno sulle colonne, almeno un ciclo pre-condizionato e uno post-condizionato, uscita anticipata espressa nella condizione di un ciclo.
+**File:** `es09_triangoli_strutturato.c` · **Test:** `make test T=01 E=es09`
+
+<details><summary>💡 Suggerimento</summary>
+Tieni un contatore <code>stampati</code>: è la "variabile di appoggio" della consegna. Mettilo nella condizione di <b>entrambi</b> i <code>while</code> (<code>&amp;&amp; stampati &lt; max</code>). Nella validazione controlla anche il valore restituito da <code>scanf</code>: se l'input finisce, <code>righe</code> non cambia più e il <code>do while</code> girerebbe per sempre.
+</details>
+
+<details><summary>✅ Soluzione spiegata passo passo</summary>
+
+1. **Validazione** con `do { scanf } while (righe <= 0);`. È post-condizionato: prima leggo, poi controllo. Se `scanf` non restituisce 1, stampo `Input non valido` e faccio `return 1`.
+2. **Ciclo esterno**: `while (i <= righe && stampati < max)`. Il secondo pezzo della condizione è l'uscita anticipata.
+3. **Ciclo interno**: `j = 1; while (j <= i && stampati < max) { … }`. Stampa `j`, con uno spazio prima se `j > 1`, poi incrementa `stampati` e `j`.
+4. Dopo il ciclo interno: `printf("\n")` e `i = i + 1`. La riga non è mai vuota, perché si entra nel ciclo esterno solo se `stampati < max`.
+
+Simulazione `4 8`:
+
+| i | numeri stampati | stampati dopo |
+|---|---|---|
+| 1 | 1 | 1 |
+| 2 | 1 2 | 3 |
+| 3 | 1 2 3 | 6 |
+| 4 | 1 2 (stop: 8 = max) | 8 |
+
+Codice: `soluzioni/es09_triangoli_strutturato.c`.
+</details>
+
+### es10 — Triangoli numerici validati, versione con goto  ·  Tipo esame
+**Fonte:** stessa consegna di es09, seconda versione richiesta. Traduzione dei cicli in salti: lezioni 1.4 e 1.6.
+**Testo:** stesso input, stesso output e stessi test di es09, ma **senza cicli strutturati** (niente `while`, `do while`, `for`). Si usano solo `if` e `goto`.
+**File:** `es10_triangoli_goto.c` · **Test:** `make test T=01 E=es10`
+
+<details><summary>💡 Suggerimento</summary>
+Schemi di traduzione:<br>
+<code>do { C } while (cond);</code> → <code>inizio: C; if (cond) goto inizio;</code><br>
+<code>while (cond) { C }</code> → <code>inizio: if (!cond) goto fine; C; goto inizio; fine:</code><br>
+L'uscita anticipata è un <code>if (stampati == max)</code> nel ciclo interno, che chiude la riga e salta all'etichetta finale.
+</details>
+
+<details><summary>✅ Soluzione spiegata passo passo</summary>
+
+1. `leggi_righe:` legge con `scanf`; se fallisce, `goto input_non_valido`; se `righe <= 0`, `goto leggi_righe`. Stessa cosa per `leggi_max:`.
+2. `riga:` controlla `if (i > righe) goto fine;` (la condizione del `while`, negata), poi `j = 1`.
+3. `colonna:` controlla `if (j > i) goto fine_riga;`, stampa `j`, incrementa, poi `if (stampati == max) { printf("\n"); goto fine; }` e `goto colonna`.
+4. `fine_riga:` va a capo, `i = i + 1`, `goto riga`.
+5. `fine: return 0;` e, dopo, `input_non_valido:` stampa il messaggio e fa `return 1`.
+
+Confronta con es09: ogni `while` è diventato due etichette (inizio e fine) più un `goto` all'indietro. L'uscita anticipata, che in es09 stava nella condizione, qui è un salto in avanti. Codice: `soluzioni/es10_triangoli_goto.c`.
+</details>
+
 ## Prompt pronti per questo argomento
 1. "Interrogami con 5 domande, una alla volta, su: fasi della compilazione (preprocessore, compilatore, linker), ruolo di `#include`, `main` e `return 0`, `&` nella scanf. Aspetta la mia risposta prima di passare alla successiva e correggimi spiegando il perché."
 2. "Ti do uno pseudocodice con i salti (stile blocco 1 del corso di Anisetti): [incolla]. Non darmi la soluzione: guidami a tradurlo in C con goto ed etichette, poi a riscriverlo con while, facendomi una domanda per volta."

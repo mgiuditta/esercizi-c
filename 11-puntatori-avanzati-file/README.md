@@ -220,10 +220,10 @@ Simulazione con zanzara/barca/casa: i = 0 → minimo "barca" (indice 1), scambio
 **Testo:** completa `copia_maiuscolo(sorgente, destinazione)`: apre la sorgente in `"r"` e la destinazione in `"w"` e copia carattere per carattere con `toupper`. Ritorna quanti caratteri ha copiato, oppure −1. Completa poi `stampa_file(nome)`, che rilegge il file creato con `fgets` e lo stampa con `fputs(riga, stdout)`.
 ```text
 Input:
-teresa.txt TERESA.txt
+teresa.txt teresa_maiuscola.txt
 Output:
 copiati 71 caratteri
---- contenuto di TERESA.txt ---
+--- contenuto di teresa_maiuscola.txt ---
 LA VISPA TERESA
 AVEA TRA L'ERBETTA
 A VOLO SORPRESA

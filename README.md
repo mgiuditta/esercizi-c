@@ -4,11 +4,11 @@
 # Esercizi C — Programmazione e Algoritmi I (UniMi SecAI)
 
 Questa repo raccoglie la **parte in linguaggio C** del corso del prof. Marco Anisetti, cioè i blocchi 2, 3 e 4.
-Sono 15 cartelle in ordine di corso, con **118 esercizi**. Ogni esercizio ha:
+Sono 15 cartelle in ordine di corso, con **120 esercizi**. Ogni esercizio ha:
 
 - un **file di partenza** (lo *starter*, cioè il `.c` con i `TODO` da completare);
 - una **soluzione commentata** nella sottocartella `soluzioni/`;
-- dei **test automatici** (386 casi in tutto). Ti dicono subito se il tuo codice è giusto.
+- dei **test automatici** (396 casi in tutto). Ti dicono subito se il tuo codice è giusto.
 
 Ogni esercizio indica la **fonte**: trascrizione, E-tivity o capitolo degli Appunti di fine Unità da cui è preso.
 Così sai sempre a quale lezione del prof si riferisce.
@@ -31,7 +31,7 @@ Il comando sotto prova tutte le soluzioni, quindi devono passare tutte:
 make sol
 ```
 
-Alla fine devi leggere `Risultato: 386 superati, 0 falliti, 0 non compilano`.
+Alla fine devi leggere `Risultato: 396 superati, 0 falliti, 0 non compilano`.
 
 > Su macOS il comando `cc` è **clang**, mentre il prof usa **gcc** nella macchina virtuale del corso.
 > Per gli esercizi la differenza non conta. Dove i due compilatori danno avvisi diversi, il README della cartella lo dice.
@@ -85,7 +85,7 @@ Con i controlli, il programma si ferma subito e ti dice **in quale riga** sta l'
 
 | # | Cartella | Lezioni | Esercizi | Tempo |
 |---|---|---|---|---|
-| 01 | [Primo programma, compilazione e goto](01-primo-programma-goto/) | 2.0, 2.1 + E-tivity | 8 | ~3 h |
+| 01 | [Primo programma, compilazione e goto](01-primo-programma-goto/) | 2.0, 2.1 + E-tivity | 10 | ~3 h |
 | 02 | [Tipi di dato, operatori e macro](02-tipi-operatori-macro/) | 2.2 | 8 | ~3 h |
 | 03 | [Input, output e strutture di controllo](03-input-output-controllo/) | 2.3 (dispensa) | 8 | ~4 h |
 | 04 | [Tipi enumerati e typedef](04-enum-typedef/) | 2.4 | 7 | ~2,5 h |
