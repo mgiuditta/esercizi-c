@@ -1,5 +1,5 @@
-> **Spostata.** Dal 28 ottobre 2026 questi esercizi vivono in `esercizi/c/` della repo unica
-> [`mgiuditta/universita`](https://github.com/mgiuditta/universita). Questa repo non viene più aggiornata.
+> **Spostata.** Dal 28 ottobre 2026 questi esercizi vivono in `anno-1/programmazione-1/esercizi/c/` della repo unica
+> [`mgiuditta/universita`](https://github.com/mgiuditta/universita). Questa repo è una copia, riallineata a mano da lì.
 
 # Esercizi C — Programmazione e Algoritmi I (UniMi SecAI)
 
